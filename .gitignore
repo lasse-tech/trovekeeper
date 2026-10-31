@@ -1,0 +1,6 @@
+dist/
+.build/
+*.zip
+*.bak
+
+.env

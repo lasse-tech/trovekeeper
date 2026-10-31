@@ -1,0 +1,40 @@
+package-as: Trovekeeper
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+externals:
+  Libs/LibStub:
+    url: https://repos.curseforge.com/wow/libstub/trunk
+    tag: latest
+  Libs/CallbackHandler-1.0:
+    url: https://repos.curseforge.com/wow/callbackhandler/trunk/CallbackHandler-1.0
+  # CurseForge's SVN mirror for this one answers HTTP 500, so it comes from
+  # tekkub's repository, which is where the library is actually maintained.
+  Libs/LibDataBroker-1.1:
+    url: https://github.com/tekkub/libdatabroker-1-1
+  Libs/LibDBIcon-1.0:
+    url: https://repos.curseforge.com/wow/libdbicon-1-0/trunk/LibDBIcon-1.0
+  Libs/HereBeDragons:
+    url: https://github.com/Nevcairiel/HereBeDragons
+
+ignore:
+  - design
+  - brand
+  - tools
+  - README.md
+  - CLAUDE.md
+  - DATA-SOURCES.md
+  - lupa
+  - scripts
+  - Makefile
+  - Makefile.bat
+  - .build
+  # Paths inside externals: they are re-parsed after the fetch.
+  - Libs/LibStub/tests
+  - Libs/LibStub/LibStub.toc
+  - Libs/HereBeDragons/HereBeDragons.toc
+  - Libs/HereBeDragons/LibStub
+  - Libs/HereBeDragons/CallbackHandler-1.0
+  - Libs/LibDataBroker-1.1/README.textile

@@ -1,0 +1,91 @@
+local ADDON, T = ...
+local L = T.L
+
+L["Trovekeeper"] = "Trovekeeper"
+L["Sturdy Chest"] = "Sturdy Chest"
+L["Delve entrance"] = "Delve entrance"
+L["Toggle the chest list"] = "Toggle the chest list"
+L["Open options"] = "Open options"
+
+-- List window
+L["%d of %d found"] = "%d of %d found"
+L["Found"] = "Found"
+L["Not found yet"] = "Not found yet"
+L["Enter the delve to see distances."] = "Enter the delve to see distances."
+L["This delve's map is not known yet."] = "This delve's map is not known yet."
+L["Enter %s once, or use /tk setmap while inside."] = "Enter %s once, or use /tk setmap while inside."
+L["Click"] = "Click"
+L["Set a TomTom waypoint"] = "Set a TomTom waypoint"
+L["Right-Click"] = "Right-Click"
+L["Toggle found"] = "Toggle found"
+L["Shift-Click"] = "Shift-Click"
+L["Hide the window"] = "Hide the window"
+L["Drag"] = "Drag"
+L["Move the window"] = "Move the window"
+L["yd"] = "yd"
+
+-- Delver's Call
+L["Delver's Call"] = "Delver's Call"
+L["Not tracked yet"] = "Not tracked yet"
+L["Not completed"] = "Not completed"
+L["In progress"] = "In progress"
+L["Ready to hand in"] = "Ready to hand in"
+L["Completed"] = "Completed"
+L["Ctrl-Click"] = "Ctrl-Click"
+L["Bind the quest you are tracking"] = "Bind the quest you are tracking"
+L["Learned the Delver's Call for %s (quest %d)."] = "Learned the Delver's Call for %s (quest %d)."
+L["Name the delve: /tk setquest <delve> [<quest id>]."] = "Name the delve: /tk setquest <delve> [<quest id>]."
+L["Track a Delver's Call quest first, or pass its id: /tk setquest <delve> <id>."] = "Track a Delver's Call quest first, or pass its id: /tk setquest <delve> <id>."
+L["Quest %d is not in your log."] = "Quest %d is not in your log."
+L["%s does not look like a Delver's Call."] = "%s does not look like a Delver's Call."
+L["/tk setquest - bind the quest you are tracking to this delve"] = "/tk setquest - bind the quest you are tracking to this delve"
+L["/tk pois - print the map POIs the bountiful scan sees"] = "/tk pois - print the map POIs the bountiful scan sees"
+
+-- Bountiful delves
+L["Bountiful Delves"] = "Bountiful Delves"
+L["Bountiful Delve"] = "Bountiful Delve"
+L["%d of %d left"] = "%d of %d left"
+L["Hide bountiful delves already run"] = "Hide bountiful delves already run"
+L["The delves running bountiful right now."] = "The delves running bountiful right now."
+L["No bountiful delves reported. /tk pois shows what the maps hold."] = "No bountiful delves reported. /tk pois shows what the maps hold."
+L["Check again"] = "Check again"
+L["The map gives no position for this one."] = "The map gives no position for this one."
+L["You are not in a delve."] = "You are not in a delve."
+
+-- Options
+L["Show world map pins"] = "Show world map pins"
+L["Show minimap pins"] = "Show minimap pins"
+L["Show the list automatically inside a delve"] = "Show the list automatically inside a delve"
+L["Hide chests already found"] = "Hide chests already found"
+L["Show the delve entrance on the zone map"] = "Show the delve entrance on the zone map"
+L["Show minimap button"] = "Show minimap button"
+L["Announce found chests in chat"] = "Announce found chests in chat"
+L["Pin scale"] = "Pin scale"
+L["Window opacity"] = "Window opacity"
+
+-- Messages
+L["TomTom is not installed - waypoint skipped."] = "TomTom is not installed - waypoint skipped."
+L["Waypoint set: %s"] = "Waypoint set: %s"
+L["Learned the map for %s (uiMapID %d)."] = "Learned the map for %s (uiMapID %d)."
+L["You are not on a map Trovekeeper knows a delve for."] = "You are not on a map Trovekeeper knows a delve for."
+L["Chest found: %s"] = "Chest found: %s"
+L["Corrected a chest position from the game's own marker."] = "Corrected a chest position from the game's own marker."
+L["Recorded an extra chest at %.1f, %.1f."] = "Recorded an extra chest at %.1f, %.1f."
+
+-- Slash help
+L["Commands:"] = "Commands:"
+L["/tk - toggle the chest list"] = "/tk - toggle the chest list"
+L["/tk map - set every chest of this delve as waypoints"] = "/tk map - set every chest of this delve as waypoints"
+L["/tk setmap - bind the current map to this delve"] = "/tk setmap - bind the current map to this delve"
+L["/tk reset - forget learned positions and progress"] = "/tk reset - forget learned positions and progress"
+
+-- About
+L["Waypoint every chest you still need"] = "Waypoint every chest you still need"
+L["Author: %s"] = "Author: %s"
+L["More: %s"] = "More: %s"
+L["Version: %s"] = "Version: %s"
+L["Needs world coordinates, which not every delve map provides. /tk diag reports whether they work here."] = "Needs world coordinates, which not every delve map provides. /tk diag reports whether they work here."
+L["/tk options - open the options, credits and version"] = "/tk options - open the options, credits and version"
+L["Allow ElvUI to skin this addon"] = "Allow ElvUI to skin this addon"
+L["Requires a /reload to take effect."] = "Requires a /reload to take effect."
+L["All delves"] = "All delves"

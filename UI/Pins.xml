@@ -1,0 +1,27 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <!-- A real map-canvas pin template, so the world map positions and scales
+         the pin itself. Unlike a world-coordinate pin it also works on instance
+         maps, which is what a delve map is.
+
+         No OnEnter/OnLeave/OnMouseUp scripts here on purpose: AcquirePin
+         asserts that a pin template defines none of them, and installs its own
+         which dispatch to the mixin's OnMouseEnter, OnMouseLeave and OnClick.
+
+         Deliberately a Frame, not a Button: the canvas creates pins as frames
+         unless the template type is registered separately. -->
+    <Frame name="TrovekeeperMapPinTemplate" mixin="MapCanvasPinMixin, TrovekeeperMapPinMixin" enableMouse="true" virtual="true">
+        <Size x="18" y="18"/>
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="icon" setAllPoints="true"/>
+            </Layer>
+            <Layer level="OVERLAY">
+                <FontString parentKey="number" inherits="GameFontNormalSmall">
+                    <Anchors>
+                        <Anchor point="CENTER" x="0" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

@@ -1,0 +1,19 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <!-- Free-form text block for the options panel: the author/version notes at
+         the top and the credits at the bottom. Its own template so it gets its
+         own frame pool and cannot inherit leftovers from a recycled Blizzard
+         section header. -->
+    <Frame name="TrovekeeperNotesTemplate" mixin="TrovekeeperNotesMixin" virtual="true">
+        <Size y="45"/>
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString parentKey="Text" inherits="GameFontHighlight" justifyH="LEFT" justifyV="TOP">
+                    <Anchors>
+                        <!-- x=7 matches SettingsListSectionHeaderTemplate's title -->
+                        <Anchor point="TOPLEFT" x="7" y="0"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>

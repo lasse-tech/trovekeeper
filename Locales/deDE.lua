@@ -1,0 +1,91 @@
+local ADDON, T = ...
+if GetLocale() ~= "deDE" then return end
+local L = T.L
+
+L["Trovekeeper"] = "Trovekeeper"
+L["Sturdy Chest"] = "Stabile Truhe"
+L["Delve entrance"] = "Eingang zur Tiefe"
+L["Toggle the chest list"] = "Truhenliste ein-/ausblenden"
+L["Open options"] = "Optionen öffnen"
+
+L["%d of %d found"] = "%d von %d gefunden"
+L["Found"] = "Gefunden"
+L["Not found yet"] = "Noch nicht gefunden"
+L["Enter the delve to see distances."] = "Betritt die Tiefe, um Entfernungen zu sehen."
+L["This delve's map is not known yet."] = "Die Karte dieser Tiefe ist noch nicht bekannt."
+L["Enter %s once, or use /tk setmap while inside."] = "Betritt %s einmal, oder nutze drinnen /tk setmap."
+L["Click"] = "Klick"
+L["Set a TomTom waypoint"] = "TomTom-Wegpunkt setzen"
+L["Right-Click"] = "Rechtsklick"
+L["Toggle found"] = "Gefunden umschalten"
+L["Shift-Click"] = "Shift-Klick"
+L["Hide the window"] = "Fenster ausblenden"
+L["Drag"] = "Ziehen"
+L["Move the window"] = "Fenster verschieben"
+L["yd"] = "m"
+
+-- Delver's Call. The series name stays English: the German one is Blizzard's
+-- to pick, and the block heading swaps itself for whatever the game calls it
+-- as soon as one quest title has been read.
+L["Delver's Call"] = "Delver's Call"
+L["Not tracked yet"] = "Noch nicht bekannt"
+L["Not completed"] = "Nicht abgeschlossen"
+L["In progress"] = "In Arbeit"
+L["Ready to hand in"] = "Bereit zur Abgabe"
+L["Completed"] = "Abgeschlossen"
+L["Ctrl-Click"] = "Strg-Klick"
+L["Bind the quest you are tracking"] = "Verfolgte Quest zuordnen"
+L["Learned the Delver's Call for %s (quest %d)."] = "Delver's Call für %s gelernt (Quest %d)."
+L["Name the delve: /tk setquest <delve> [<quest id>]."] = "Nenne die Tiefe: /tk setquest <Tiefe> [<Quest-ID>]."
+L["Track a Delver's Call quest first, or pass its id: /tk setquest <delve> <id>."] = "Verfolge zuerst eine Delver's-Call-Quest oder gib ihre ID an: /tk setquest <Tiefe> <ID>."
+L["Quest %d is not in your log."] = "Quest %d ist nicht in deinem Questlog."
+L["%s does not look like a Delver's Call."] = "%s sieht nicht nach einem Delver's Call aus."
+L["/tk setquest - bind the quest you are tracking to this delve"] = "/tk setquest - verfolgte Quest dieser Tiefe zuordnen"
+L["/tk pois - print the map POIs the bountiful scan sees"] = "/tk pois - Karten-POIs ausgeben, die der Bountiful-Scan sieht"
+
+-- Bountiful delves. "Bountiful" stays English for the same reason Delver's Call
+-- does: Blizzard's German term is theirs to pick, and the POI hands over the
+-- delve name only, never a label this could be learned from.
+L["Bountiful Delves"] = "Bountiful Delves"
+L["Bountiful Delve"] = "Bountiful Delve"
+L["%d of %d left"] = "noch %d von %d"
+L["Hide bountiful delves already run"] = "Bereits gelaufene Bountiful-Tiefen ausblenden"
+L["The delves running bountiful right now."] = "Die Tiefen, die gerade Bountiful laufen."
+L["No bountiful delves reported. /tk pois shows what the maps hold."] = "Keine Bountiful-Tiefen gemeldet. /tk pois zeigt, was die Karten hergeben."
+L["Check again"] = "Neu prüfen"
+L["The map gives no position for this one."] = "Die Karte liefert dafür keine Position."
+L["You are not in a delve."] = "Du bist in keiner Tiefe."
+
+L["Show world map pins"] = "Pins auf der Weltkarte anzeigen"
+L["Show minimap pins"] = "Pins auf der Minikarte anzeigen"
+L["Show the list automatically inside a delve"] = "Liste in einer Tiefe automatisch anzeigen"
+L["Hide chests already found"] = "Bereits gefundene Truhen ausblenden"
+L["Show the delve entrance on the zone map"] = "Eingang zur Tiefe auf der Zonenkarte anzeigen"
+L["Show minimap button"] = "Minikarten-Button anzeigen"
+L["Announce found chests in chat"] = "Gefundene Truhen im Chat melden"
+L["Pin scale"] = "Pin-Größe"
+L["Window opacity"] = "Fenster-Deckkraft"
+
+L["TomTom is not installed - waypoint skipped."] = "TomTom ist nicht installiert - Wegpunkt übersprungen."
+L["Waypoint set: %s"] = "Wegpunkt gesetzt: %s"
+L["Learned the map for %s (uiMapID %d)."] = "Karte für %s gelernt (uiMapID %d)."
+L["You are not on a map Trovekeeper knows a delve for."] = "Du bist auf keiner Karte, zu der Trovekeeper eine Tiefe kennt."
+L["Chest found: %s"] = "Truhe gefunden: %s"
+L["Corrected a chest position from the game's own marker."] = "Truhenposition anhand der Spielmarkierung korrigiert."
+L["Recorded an extra chest at %.1f, %.1f."] = "Zusätzliche Truhe bei %.1f, %.1f erfasst."
+
+L["Commands:"] = "Befehle:"
+L["/tk - toggle the chest list"] = "/tk - Truhenliste ein-/ausblenden"
+L["/tk map - set every chest of this delve as waypoints"] = "/tk map - alle Truhen dieser Tiefe als Wegpunkte setzen"
+L["/tk setmap - bind the current map to this delve"] = "/tk setmap - aktuelle Karte an diese Tiefe binden"
+L["/tk reset - forget learned positions and progress"] = "/tk reset - gelernte Positionen und Fortschritt vergessen"
+
+L["Waypoint every chest you still need"] = "Wegpunkte für alle fehlenden Truhen setzen"
+L["Author: %s"] = "Autor: %s"
+L["More: %s"] = "Mehr: %s"
+L["Version: %s"] = "Version: %s"
+L["Needs world coordinates, which not every delve map provides. /tk diag reports whether they work here."] = "Benötigt Weltkoordinaten, die nicht jede Tiefen-Karte liefert. /tk diag meldet, ob sie hier funktionieren."
+L["/tk options - open the options, credits and version"] = "/tk options - Optionen, Credits und Version öffnen"
+L["Allow ElvUI to skin this addon"] = "ElvUI dieses Addon skinnen lassen"
+L["Requires a /reload to take effect."] = "Erfordert ein /reload."
+L["All delves"] = "Alle Tiefen"
