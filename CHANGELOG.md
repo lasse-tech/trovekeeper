@@ -2,6 +2,11 @@
 
 All notable changes to Trovekeeper are documented here.
 
+## [1.0.1] - 2026-10-31
+
+### Added
+- Donate link in the addon list (`X-Donate`)
+
 ## [1.0.0] - 2026-10-31
 
 Initial release.

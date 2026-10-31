@@ -193,6 +193,10 @@ says outright whether the current map supports them.
 Design canvas they came from. `make icon` regenerates every PNG, including the
 `Media/Icon.png` the addon loads. See `brand/README.md`.
 
+## Support
+
+[Buy me a coffee](https://buymeacoffee.com/gossardla)
+
 ## Credits
 
 - Waypoints: [TomTom](https://www.curseforge.com/wow/addons/tomtom) by Cladhaire
