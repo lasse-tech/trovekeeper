@@ -59,7 +59,7 @@ FIND_ADDONS = if [ -n "$(WOW_RETAIL_ADDON_FOLDER)" ]; then echo "$(WOW_RETAIL_AD
 NO_ADDONS_MSG = echo "AddOns folder not found. Set WOW_RETAIL_ADDON_FOLDER=/path/to/Interface/AddOns, or pass WOW_DIR=/path/to/World of Warcraft"
 
 .DEFAULT_GOAL := help
-.PHONY: help version icon lint check check-toc check-xml check-locales ruff install debug uninstall purge \
+.PHONY: help version icon store-images lint check check-toc check-xml check-locales ruff install debug uninstall purge \
 	dist deploy release public github clean distclean
 
 ##@ General
@@ -84,6 +84,10 @@ $(PY):
 	@python3 -m venv $(VENV)
 	@$(VENV)/bin/pip install --quiet lupa
 
+## store-images: banner and avatar for CurseForge and Wago into brand/images/ (Makefile only)
+store-images:
+	python3 brand/source/store_images.py
+
 ##@ Checks
 
 ## check: load every Lua file with a real Lua loader
@@ -105,10 +109,11 @@ check-locales:
 # tools/build-icon.py stays out of the public export
 PY_TOOLS := $(wildcard tools/*.py)
 
-## ruff: Python checks on tools/, any finding fails
+## ruff: Python checks on tools/ and brand/source/, any finding fails
 ruff:
 	@command -v ruff >/dev/null 2>&1 || { echo "ruff not found"; exit 1; }
-	@ruff check --no-cache -q $(PY_TOOLS) && echo "ruff: no findings"
+	@ruff check --no-cache -q $(PY_TOOLS) brand/source && echo "ruff: no findings"
+	@ruff format --check -q brand/source
 
 ## lint: Lua, XML, TOC, locales, ruff, Makefile comments (BLOCKER)
 lint: check check-xml check-toc check-locales ruff

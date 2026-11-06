@@ -2,6 +2,14 @@
 
 All notable changes to Trovekeeper are documented here.
 
+## [Unreleased]
+
+## [1.0.2] - 2026-11-06
+
+### Changed
+- Interface 120105 (12.1.5)
+- HereBeDragons-2.0 minor 35 and LibDBIcon-1.0 minor 57 (current upstream)
+
 ## [1.0.1] - 2026-10-31
 
 ### Added

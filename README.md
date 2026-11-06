@@ -9,7 +9,7 @@ together make up *Midnight: Leave No Treasure Unfound* and the *Treasure Seeker*
 title. The bountiful list covers whatever the game is running, Midnight or The
 War Within.
 
-![Interface](https://img.shields.io/badge/Interface-120100-blue) ![Version](https://img.shields.io/badge/Version-1.0.0-green)
+![Interface](https://img.shields.io/badge/Interface-120105-blue) ![Version](https://img.shields.io/badge/Version-1.0.1-green)
 
 ## What it does
 
@@ -149,7 +149,9 @@ purpose. Trovekeeper ships no chest coordinates for them.
 
 ## Requirements
 
-- World of Warcraft: Midnight, interface 120100
+- World of Warcraft: Midnight, interface 120105. Not World of Warcraft: Forever: its
+  client does not load Blizzard's delve UI (`Blizzard_DelvesDifficultyPicker`,
+  `AllowLoadGameType: standard`), and Midnight's delves are not part of it
 - [TomTom](https://www.curseforge.com/wow/addons/tomtom) for waypoints. Without
   it everything else still works; only the waypoint is skipped.
 
@@ -160,6 +162,7 @@ HereBeDragons-2.0.
 
 ```
 make icon       rebuild Media/Icon.png and brand/*.png from the SVG sources
+make store-images  banner and avatar for CurseForge and Wago into brand/images/
 make lint       check the Lua, the XML, the TOC file list, the locale tables, the Python tools
 make install    copy into the live WoW client
 make debug      install, and turn the client's Lua error display on
@@ -191,7 +194,8 @@ says outright whether the current map supports them.
 
 `brand/` holds the icon: the SVG sources, the raster exports, and the Claude
 Design canvas they came from. `make icon` regenerates every PNG, including the
-`Media/Icon.png` the addon loads. See `brand/README.md`.
+`Media/Icon.png` the addon loads. It also holds the CurseForge and Wago pages:
+text, fields, banner and avatar (`make store-images`). See `brand/README.md`.
 
 ## Support
 
