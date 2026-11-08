@@ -3,13 +3,15 @@
 ## Notes: Shows the hidden Sturdy Chests of Midnight delves on the world map, the minimap and in a list. Click a chest for a TomTom waypoint.
 ## Notes-deDE: Zeigt die versteckten Stabilen Truhen der Midnight-Tiefen auf Weltkarte, Minikarte und in einer Liste. Klick auf eine Truhe setzt einen TomTom-Wegpunkt.
 ## Author: Lars Gossard
-## Version: 1.0.2
+## Version: 1.0.3
 ## X-Email: lars@lasse-tech.de
 ## X-Website: https://github.com/lasse-tech/trovekeeper
 ## X-Donate: https://buymeacoffee.com/gossardla
 ## X-Copyright: 2026 lasse tech, Lars Gossard
 ## X-License: MIT
 ## SavedVariables: TrovekeeperDB
+## X-Curse-Project-ID: 1791932
+## X-Wago-ID: vNAWqBKo
 ## OptionalDeps: TomTom
 ## IconTexture: Interface\AddOns\Trovekeeper\Media\Icon.png
 

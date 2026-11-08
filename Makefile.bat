@@ -93,12 +93,12 @@ python -m venv "%VENV%" || exit /b 1
 "%VENV%\Scripts\pip" install --quiet lupa || exit /b 1
 exit /b 0
 
-rem icon: rebuild Media\Icon.png and brand\*.png from the SVGs
+rem icon: rebuild Media\Icon.png and brand\logo\*.png from the SVGs
 :icon
 call :venv || exit /b 1
 "%VENV%\Scripts\pip" install --quiet pillow || exit /b 1
 where rsvg-convert >nul 2>&1 || "%VENV%\Scripts\pip" install --quiet cairosvg || exit /b 1
-"%VENV%\Scripts\python" tools\build-icon.py brand Media
+"%VENV%\Scripts\python" tools\build-icon.py brand\logo Media
 exit /b %errorlevel%
 
 rem check: load every Lua file with a real Lua loader

@@ -73,11 +73,11 @@ help:
 version:
 	@echo "$(VERSION)"
 
-## icon: rebuild Media/Icon.png and brand/*.png from the SVGs
+## icon: rebuild Media/Icon.png and brand/logo/*.png from the SVGs
 icon: $(PY)
 	@$(VENV)/bin/pip install --quiet pillow
 	@command -v rsvg-convert >/dev/null 2>&1 || $(VENV)/bin/pip install --quiet cairosvg
-	@$(PY) tools/build-icon.py brand Media
+	@$(PY) tools/build-icon.py brand/logo Media
 
 $(PY):
 	@mkdir -p .build
